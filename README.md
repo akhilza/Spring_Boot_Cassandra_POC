@@ -10,12 +10,12 @@ cassandra.bat
 # 4. Create Cassandra keyspace with name javatechie like below                      
 create keyspace javatechie with replication={'class':'SimpleStrategy', 'replication_factor':1}
 # 5. Create table for javatechie keyspace:
-Use javatechie; 
-CREATE TABLE User(
+Use testcassandra; 
+CREATE TABLE Person(
    id int PRIMARY KEY,
    name text,
-   address text,
-   age int
+   email text,
+   password text
 );
 
 We are done with Table creation and environment setup now follow above code for development
